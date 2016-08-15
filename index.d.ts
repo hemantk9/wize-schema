@@ -1,7 +1,7 @@
-interface WizeColumn {
-    name: string,
-    displayName: string,
-    isAvailable: boolean,
+declare interface WizeColumn {
+    name?: string,
+    displayName?: string,
+    isAvailable?: boolean,
     letterCase: string,
     type: string,
     trim: boolean,
@@ -9,15 +9,15 @@ interface WizeColumn {
     required: boolean,
     unique: boolean,
     index: boolean,
-    fieldName: string,
-    length: number,
+    fieldName?: string,
+    length?: number,
     default: Object,
-    ref: string,
-    readRoles: string[],
-    createRoles: string[],
-    updateRoles: string[],
-    deleteRoles: string[],
-    definedBy: string[]
+    ref?: string,
+    readRoles?: string[],
+    createRoles?: string[],
+    updateRoles?: string[],
+    deleteRoles?: string[],
+    definedBy?: string[]
 }
 interface WizeRelation {
     type: string,
