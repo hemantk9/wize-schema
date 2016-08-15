@@ -24,7 +24,7 @@ interface WizeRelation {
     schemaName: string
 }
 
-interface WizeSchema { 
+declare interface WizeSchema { 
     name: string,
     tableName: string,
     columns: WizeColumn[],
@@ -44,5 +44,3 @@ interface WizeSchema {
     updateRoles: string[],
     deleteRoles: string[]
 }
-
-export {WizeSchema};
