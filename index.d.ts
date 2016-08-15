@@ -1,4 +1,4 @@
-declare interface WizeColumn {
+interface WizeColumn {
     name?: string,
     displayName?: string,
     isAvailable?: boolean,
@@ -23,8 +23,7 @@ interface WizeRelation {
     type: string,
     schemaName: string
 }
-
-declare interface WizeSchema { 
+interface WizeSchema { 
     name: string,
     tableName: string,
     columns: WizeColumn[],
@@ -44,3 +43,4 @@ declare interface WizeSchema {
     updateRoles: string[],
     deleteRoles: string[]
 }
+export {WizeColumn, WizeSchema}
